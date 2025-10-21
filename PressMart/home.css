@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caramel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+nav .navleft a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1.4rem;
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+}
+nav .navcenter a {
+  text-decoration: none;
+  color: #787A7C;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+}
+nav .navright a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+}
+
+main {
+  width: 100%;
+}
+main header {
+  width: 100%;
+  background-color: #eff1f6;
+  display: flex;
+  justify-content: space-around;
+}
+main header .header1 {
+  text-align: center;
+  padding: 3.5rem 0.5rem;
+}
+main header .header1 h2 {
+  color: rgb(60, 60, 247);
+  font-family: "Caramel", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+}
+main header .header1 h1 {
+  color: #171717;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+main header .header1 p {
+  padding: 0.7rem 0;
+  color: crimson;
+  font-size: 1.2rem;
+}
+main header .header1 button {
+  position: relative;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+main header .header1 .Shop {
+  background-color: #ff9900;
+  color: white;
+}
+main header .header1 .Shop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #e68a00;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+main header .header1 .Shop:hover::after {
+  left: 0;
+}
+main header .header1 .Read {
+  background-color: white;
+  color: #ff9900;
+  border: 2px solid #ff9900;
+}
+main header .header1 .Read::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff9900;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+main header .header1 .Read:hover::after {
+  left: 0;
+}
+main header .header1 .Read:hover {
+  color: white;
+}
+main header .header2 img {
+  width: 400px;
+  margin-right: 1rem;
+}
+main .view1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+main .view1 .view1a a {
+  text-decoration: none;
+  color: rgb(81, 81, 255);
+  font-size: 2rem;
+}
+main .view1 .view1a h3 {
+  display: inline-block;
+  color: #787A7C;
+}
+main .view1 .view1a:hover a {
+  color: #e68a00;
+}
+main .view2 {
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  padding: 0.8rem;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "new handbag watch" "new accessorles accessorles";
+}
+main .view2 .new {
+  width: 48.611vw;
+  height: 600px;
+  grid-area: new;
+  background-image: url(https://i.pinimg.com/736x/de/82/af/de82af36bbdbe551476f8cc1654a10e3.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: end;
+  padding: 5rem 2rem;
+}
+main .view2 .new h5 {
+  color: blue;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+main .view2 .new h4 {
+  color: #171717;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+main .view2 .new button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #e68a00;
+}
+main .view2 .handbag {
+  width: 24.3vw;
+  grid-area: handbag;
+  background-image: url(https://i.pinimg.com/736x/36/c8/1f/36c81f2b4be4cc82748cabb708ad227b.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+main .view2 .handbag h4 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+main .view2 .handbag a {
+  color: #e68a00;
+}
+main .view2 .watch {
+  width: 22.917vw;
+  grid-area: watch;
+  background-image: url(https://i.pinimg.com/1200x/fa/b8/cd/fab8cdfc5af40c894dff84544e6f9dfa.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+main .view2 .watch p {
+  margin-top: 0.5rem;
+  color: rgb(23, 23, 138);
+  display: inline-block;
+}
+main .view2 .watch h4 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+main .view2 .watch a {
+  color: #e68a00;
+}
+main .view2 .accessorles {
+  width: 49.167vw;
+  grid-area: accessorles;
+  background-image: url(https://images.unsplash.com/photo-1622260614927-208cfe3f5cfd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+main .view2 .accessorles h4 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+main .view2 .accessorles a {
+  color: #e68a00;
+}
+main .view3 {
+  width: 100%;
+}
+main .view3 h1 {
+  text-align: center;
+  color: #171717;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+main .view3 .link {
+  display: flex;
+  justify-content: center;
+}
+main .view3 .link a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  color: #787A7C;
+}
+main .view3 .sell {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+main .view3 .sell .card {
+  padding: 1rem;
+  width: 31.7vw;
+  flex-shrink: 0;
+  text-align: center;
+}
+main .view3 .sell .card a img {
+  width: 30.7vw;
+  height: 75vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+main .view3 .sell .card h5 {
+  color: #787A7C;
+  font-size: 1.5rem;
+}
+main .view3 .sell .card p {
+  color: #171717;
+  padding: 0.7rem 0;
+}
+main .view3 .sell .card button {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #e68a00;
+  border-radius: 50px;
+  background-color: #e68a00;
+}
+main footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  background-color: #bababa;
+}
+main footer .about h5 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #171717;
+  text-align: center;
+}
+main footer .about p {
+  width: 500px;
+  color: #787A7C;
+}
+main footer .contact h5 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #171717;
+  text-align: center;
+}
+main footer .contact a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #171717;
+}
+main footer .contact h3 {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: #787A7C;
+}
+main footer .contact h3:hover {
+  color: #e68a00;
+}
+main footer .form h5 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #171717;
+  text-align: center;
+}
+main footer .form input {
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid #e68a00;
+}
+main footer .form .feed {
+  padding: 3rem 1.5rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+  }
+  nav .navcenter {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .view1 {
+    gap: 2rem;
+  }
+  main .view1 h3 {
+    font-size: 0.72rem;
+  }
+  main .view2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+  }
+  main .view2 .new {
+    width: 100vw;
+  }
+  main .view2 .handbag {
+    width: 100vw;
+    height: 20vh;
+  }
+  main .view2 .watch {
+    width: 100vw;
+    height: 15vh;
+  }
+  main .view2 .accessorles {
+    width: 100vw;
+    height: 15vh;
+  }
+  main .view3 .sell {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    overflow: scroll;
+    gap: 1rem;
+  }
+  main .view3 .sell .card {
+    width: 200px;
+  }
+  main .view3 .sell .card a img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .sell::-webkit-scrollbar {
+    display: none;
+  }
+  main footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main footer p {
+    width: 200px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=home.css.map */

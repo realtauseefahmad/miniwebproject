@@ -1,0 +1,13 @@
+.Shop{
+                padding: 1.2rem;
+                border: 1px solid rgb(60, 60, 247);
+                background-color: rgb(60, 60, 247);
+                margin: 2rem 1rem;
+                border-radius: 50px;
+            }
+            .Read{
+                padding: 1.2rem;
+                border: 1px solid rgb(60, 60, 247);
+                background-color: transparent;
+                border-radius: 50px;
+            }
