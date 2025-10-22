@@ -339,15 +339,27 @@ main footer .form .feed {
   padding: 3rem 1.5rem;
   margin-top: 0.8rem;
 }
+main footer .form button {
+  padding: 0.5rem 5rem;
+  margin-top: 0.8rem;
+  border: none;
+  background-color: #e68a00;
+  border-radius: 30px;
+}
 
 @media (max-width: 900px) {
+  body {
+    width: 100%;
+  }
   nav {
+    padding: 1.5rem 1.5rem;
     width: 100%;
   }
   nav .navcenter {
     display: none;
   }
   main {
+    overflow: hidden;
     width: 100%;
   }
   main header {
@@ -408,8 +420,51 @@ main footer .form .feed {
     align-items: center;
     text-align: center;
   }
-  main footer p {
-    width: 200px;
+  main footer .about p {
+    font-size: 1rem;
+    width: 300px;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  main {
+    overflow: hidden;
+  }
+}
+@media (max-width: 393px) {
+  nav {
+    padding: 1rem 0.8rem;
+  }
+  nav .navright a {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 350px) {
+  nav {
+    padding: 1rem 0.6rem;
+  }
+  nav .navleft a {
+    font-size: 1.2rem;
+  }
+  nav .navright a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 330px) {
+  nav {
+    padding: 1rem 0.6rem;
+  }
+  nav .navleft a {
+    font-size: 1rem;
+  }
+  nav .navright a {
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=home.css.map */
