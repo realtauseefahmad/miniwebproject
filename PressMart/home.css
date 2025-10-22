@@ -254,6 +254,21 @@ main .view3 .link a {
   text-align: center;
   padding: 0.5rem 1rem;
   color: #787A7C;
+  position: relative;
+}
+main .view3 .link a::after {
+  content: "";
+  background: #e68a00;
+  position: absolute;
+  height: 0.06rem;
+  width: 0;
+  left: 0.8rem;
+  bottom: 0rem;
+  transition: 0.4s;
+  pointer-events: none;
+}
+main .view3 .link a:hover::after {
+  width: 75%;
 }
 main .view3 .sell {
   display: flex;
@@ -462,7 +477,7 @@ main footer .form button {
     padding: 1rem 0.6rem;
   }
   nav .navleft a {
-    font-size: 1rem;
+    font-size: 1 rem;
   }
   nav .navright a {
     font-size: 0.5rem;
