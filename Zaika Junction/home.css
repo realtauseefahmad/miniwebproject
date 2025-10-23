@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .header1 {
+  width: 40%;
+  padding: 1rem 0.8rem;
+}
+header .header1 .headtop a img {
+  width: 100px;
+  height: 35px;
+}
+header .header1 .headdown {
+  text-align: center;
+  padding: 1rem;
+}
+header .header1 .headdown h4 {
+  color: #ef9002;
+  font-size: 0.8rem;
+}
+header .header1 .headdown h1 {
+  color: #171717;
+  font-size: 2.4rem;
+  padding: 0.8rem;
+}
+header .header1 .headdown p {
+  color: #787A7C;
+  width: 650px;
+}
+header .header1 .headdown button {
+  margin: 1rem;
+  padding: 0.5rem 2.5rem;
+  background-color: #e68a00;
+  border: 1px solid #e68a00;
+  border-radius: 50px;
+}
+header .header2 {
+  width: 60%;
+  background-color: #ff9900;
+  text-align: center;
+  clip-path: ellipse(93% 97% at 95% 0%);
+}
+header .header2 .foottop {
+  padding: 1rem 0;
+}
+header .header2 .foottop a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1rem;
+  padding: 0 0.8rem;
+}
+header .header2 .foottop .log {
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ef9002;
+  border-radius: 30px;
+  margin-left: 6rem;
+}
+header .header2 .mobiletop {
+  display: none;
+  padding: 1rem 0.5rem;
+  text-align: end;
+}
+header .header2 .mobiletop a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1.3rem;
+  padding: 0 0.8rem;
+}
+header .header2 .footdown img {
+  width: 200px;
+}
+
+main {
+  width: 100%;
+}
+main .section1 {
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+main .section1 .section1l img {
+  width: 130px;
+}
+main .section1 .section1r h3 {
+  color: #171717;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+main .section1 .section1r p {
+  width: 900px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #787A7C;
+  padding-bottom: 0.8rem;
+}
+main .section1 .section1r a {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  color: #e68a00;
+  background-color: transparent;
+  margin-top: 1rem;
+  border: 1px solid #ef9002;
+  border-radius: 50px;
+}
+
+@media (max-width: 1300px) {
+  header .header1 .headdown p {
+    width: 500px;
+  }
+  header .header2 .foottop a {
+    font-size: 0.8rem;
+  }
+  header .header2 .foottop .log {
+    margin-left: 0;
+  }
+  main {
+    width: 100%;
+  }
+  main .section1 .section1r p {
+    width: 705px;
+  }
+}
+@media (max-width: 1020px) {
+  header .header1 .headdown p {
+    width: 400px;
+  }
+  header .header2 .foottop a {
+    font-size: 0.6rem;
+  }
+  header .header2 .foottop .log {
+    margin-left: 0;
+  }
+  header .header2 .footdown img {
+    width: 19.6vw;
+  }
+  main {
+    width: 100%;
+  }
+  main .section1 .section1r p {
+    width: 500px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 850px) {
+  header {
+    overflow: hidden;
+  }
+  header .header1 .headdown h1 {
+    font-size: 2rem;
+  }
+  header .header1 .headdown p {
+    width: 340px;
+    font-size: 0.8rem;
+  }
+  header .header1 .headdown button {
+    padding: 0.5rem 2rem;
+  }
+  header .header2 .foottop {
+    display: none;
+  }
+  header .header2 .mobiletop {
+    display: block;
+  }
+  header .header2 .mobiletop a {
+    font-weight: bold;
+  }
+  header .header2 .footdown img {
+    width: 170px;
+  }
+  main {
+    overflow: hidden;
+    width: 100%;
+  }
+  main .section1 {
+    gap: 2rem;
+  }
+  main .section1 .section1l img {
+    width: 100px;
+  }
+  main .section1 .section1r p {
+    width: 400px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  header .header1 .headdown h4 {
+    font-size: 0.8rem;
+  }
+  header .header1 .headdown h1 {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+  header .header1 .headdown p {
+    width: 280px;
+    font-size: 0.6rem;
+  }
+  header .header2 .mobiletop {
+    font-size: 0.9rem;
+  }
+  main {
+    width: 100%;
+  }
+  main .section1 .section1l img {
+    margin-top: 0.6rem;
+    width: 80px;
+  }
+  main .section1 .section1r p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 600px) {
+  header .header1 {
+    width: 45%;
+  }
+  header .header1 .headdown h4 {
+    font-size: 0.6rem;
+  }
+  header .header1 .headdown h1 {
+    font-size: 1rem;
+  }
+  header .header1 .headdown p {
+    width: 220px;
+    font-size: 0.5rem;
+  }
+  header .header1 .headdown button {
+    padding: 0.5rem 1.5rem;
+  }
+  header .header2 {
+    width: 55%;
+  }
+  header .header2 .mobiletop a {
+    font-size: 0.66rem;
+    font-weight: bold;
+  }
+  header .header2 .footdown img {
+    width: 140px;
+  }
+  main {
+    width: 100%;
+  }
+  main .section1 {
+    gap: 1.5rem;
+  }
+  main .section1 .section1l img {
+    margin-top: 2rem;
+    width: 60px;
+  }
+  main .section1 .section1r h3 {
+    font-size: 1.2rem;
+  }
+  main .section1 .section1r p {
+    width: 300px;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 460px) {
+  header .header1 .headtop a img {
+    width: 70px;
+    height: 30px;
+  }
+  header .header1 .headdown h4 {
+    font-size: 0.5rem;
+  }
+  header .header1 .headdown p {
+    width: 180px;
+    font-size: 0.4rem;
+  }
+  header .header1 .headdown button {
+    margin: 0.3rem;
+  }
+  header .header2 .mobiletop a {
+    font-weight: bold;
+    padding: 0 0.6rem;
+  }
+  header .header2 .footdown img {
+    width: 110px;
+  }
+  main {
+    width: 100%;
+  }
+  main .section1 {
+    gap: 0;
+  }
+  main .section1 .section1l img {
+    margin-top: 0;
+    width: 80px;
+    margin-left: 1.87rem;
+  }
+  main .section1 .section1r p {
+    width: 270px;
+  }
+}
+@media (max-width: 407px) {
+  header .header1 .headtop a img {
+    width: 70px;
+    height: 30px;
+  }
+  header .header1 .headdown h4 {
+    font-size: 0.5rem;
+    margin-left: 0.7rem;
+  }
+  header .header1 .headdown h1 {
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+  }
+  header .header1 .headdown p {
+    width: 150px;
+    font-size: 0.4rem;
+  }
+  header .header1 .headdown button {
+    padding: 0.4rem 1rem;
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+  header .header2 .mobiletop a {
+    padding: 0 0.4rem;
+    font-weight: bold;
+  }
+  header .header2 .footdown img {
+    width: 90px;
+  }
+  main .section1 .section1l img {
+    margin-top: 1rem;
+    width: 60px;
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=home.css.map */

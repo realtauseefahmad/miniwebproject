@@ -1,0 +1,121 @@
+    <main>
+        <header>
+            <nav>
+                <div class="navl">
+                    <a href="#"><img src="./Screenshot 2025-10-22 230332.png" alt=""></a>
+                </div>
+                <div class="navc">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="navr">
+                    <a href="#"><i class="ri-user-line"></i></a>
+                    <a href="#"><i class="ri-search-line"></i></a>
+                    <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+                </div>
+            </nav>
+            <div class="head">
+                <div class="head1">
+                    <h5>restaurant</h5>
+                    <h1>We Serve <br>Delicious Food</h1>
+                    <p>At our restaurant, every dish is crafted with passion and fresh ingredients to bring you the perfect blend of taste and quality. From flavorful starters to mouth-watering main courses, we make sure every bite leaves you wanting more. Experience the joy of great food made with love and served with care.</p>
+                    <button>Get Started</button>
+                </div>
+                <div class="head2">
+                     <img src="./915cf8a2545d1b2738e7ceb8184ac80d-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </header>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    main{
+    width: 100%;
+
+    header{
+        width: 100%;
+        
+        
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            .navl {
+                a img{
+                    width: 100px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+            }
+            .navc{
+                a{
+                    text-decoration: none;
+                    padding: 0 2rem;
+                    font-size: 0.8rem;
+                    color: #787A7C;
+                }
+            }
+            .navr{
+                a{
+                    text-decoration: none;
+                    color: #171717;
+                    padding: 0 0.8rem;
+                }
+            }
+        }
+        .head{
+            display: flex;
+            justify-content: space-around;
+            padding: 0.8rem 0;
+            .head1{
+                h5{
+                    color: #fff;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                h1{
+                    color: #171717;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    padding: 0.5rem 0;
+                }
+                p{
+                    width: 500px;
+                    text-align: center;
+                    color: #787A7C;
+                    font-weight: 100;
+                    padding: 0.5rem 0;
+                }
+                button{
+                    margin: 0.5rem 1rem;
+                    margin-left: 8rem;
+                    padding: 0.5rem 3.5rem;
+                    border: none;
+                    border-radius: 50px;
+                    background-color: #fff;
+                }
+            }
+            .head2{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

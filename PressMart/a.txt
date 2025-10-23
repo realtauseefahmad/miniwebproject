@@ -11,3 +11,4 @@
                 background-color: transparent;
                 border-radius: 50px;
             }
+            background-color: #e68a00;
