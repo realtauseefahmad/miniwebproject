@@ -185,6 +185,51 @@ main{
             }
         }
     }
+    .section3{
+        width: 100%;
+        padding: 1rem 0.5rem;
+        h2{
+            text-align: center;
+            span{
+                color: #ef9002;
+            }
+        }
+        .review{
+            padding: 1.5rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            .reviewl{
+                padding: 1.5rem 3rem;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 1.5rem;
+                }
+                h4{
+                    display: inline-block;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    color: #171717;
+                }
+                p{
+                    width: 900px;
+                    color: #787A7C;
+                    padding: 1rem 0;
+                    font-size: 1.2rem;
+                }
+            }
+            .reviewr{
+                img{
+                    width: 200px;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
 }
 @media (max-width:1300px) {
     header{
@@ -213,6 +258,15 @@ main{
             .section1r{
                 p{
                     width: 705px;
+                }
+            }
+        }
+        .section3{
+            .review{
+                .reviewl{
+                    p{
+                        width: 700px;
+                    }
                 }
             }
         }
@@ -276,6 +330,27 @@ main{
                 }
             }
         }
+        .section3{
+            .review{
+                gap: 0;
+                .reviewl{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                    p{
+                        width: 510px;
+                        font-size: 1rem;
+                    }
+                }
+                .reviewr{
+                img{
+                    width: 170px;
+                    
+                }
+                }
+            }
+        }
     }
 }
 @media (max-width:850px) {
@@ -328,6 +403,9 @@ main{
                     width: 400px;
                     font-size: 0.8rem;
                 }
+                a{
+                    padding: 0.5rem 1rem;
+                }
             }
         }
         .section2{
@@ -358,6 +436,21 @@ main{
                 }
                 #midcard{
                     margin-top: 0;
+                }
+            }
+        }
+        .section3{
+            .review{
+                padding: 0.8rem 0;
+                .reviewl{
+                    padding: 1rem 2rem;
+                    p{
+                        width: 400px;
+                    }
+                }
+                .reviewr{
+                    width: 180px;
+                    margin-top: 1.2rem;
                 }
             }
         }
@@ -489,6 +582,26 @@ main{
                 }
             }
         }
+        .section3{
+            padding: 0.5rem 0;
+            .review{
+                padding: 0;
+                .reviewl{
+                    h4{
+                        font-size: 1rem;
+                    }
+                    p{
+                        width: 300px;
+                        font-size: 0.8rem;
+                    }
+                }
+                .reviewr{
+                    img{
+                        width: 140px;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:460px) {
@@ -566,6 +679,28 @@ main{
                 }
             }
         }
+        .section3{
+            .review{
+                .reviewl{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    h4{
+                        font-size: 0.8rem;
+                    }
+                    p{
+                        width: 230px;
+                        font-size: 0.6rem;
+                    }
+                }
+                .reviewr{
+                    img{
+                        width: 120px;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:407px) {
@@ -636,6 +771,24 @@ main{
                     }
                     .break{
                         font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .section3{
+            .review{
+                .reviewl{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p{
+                        width: 200px;
+                    }
+                }
+                .reviewr{
+                    img{
+                        width: 100px;
                     }
                 }
             }
