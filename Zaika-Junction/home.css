@@ -283,6 +283,7 @@ main footer .footer3 h5 {
     width: 19.6vw;
   }
   main {
+    overflow: hidden;
     width: 100%;
   }
   main .section1 .section1r p {
