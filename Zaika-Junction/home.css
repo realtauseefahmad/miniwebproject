@@ -224,6 +224,30 @@ main .section3 .review .reviewr img {
   width: 200px;
   margin-top: 1rem;
 }
+main footer {
+  width: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(207, 207, 207, 0.9647058824);
+}
+main footer .footer1 img {
+  width: 100px;
+}
+main footer .footer1 a {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #171717;
+}
+main footer .footer2 h5 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+main footer .footer3 h5 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
 
 @media (max-width: 1300px) {
   header .header1 .headdown p {
@@ -380,6 +404,13 @@ main .section3 .review .reviewr img {
   main .section3 .review .reviewr {
     width: 180px;
     margin-top: 1.2rem;
+  }
+  main footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  main footer .footer2 {
+    padding: 1rem 0;
   }
 }
 @media (max-width: 700px) {

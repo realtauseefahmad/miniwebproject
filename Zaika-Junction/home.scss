@@ -230,6 +230,36 @@ main{
             }
         }
     }
+    footer{
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        background-color: #cfcfcff6;
+        .footer1{
+            img{
+                width: 100px;
+            }
+            a{
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: #171717;
+            }
+        }
+        .footer2{
+            h5{
+                font-size: 1.2rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .footer3{
+            h5{
+                font-size: 1.2rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
 }
 @media (max-width:1300px) {
     header{
@@ -452,6 +482,13 @@ main{
                     width: 180px;
                     margin-top: 1.2rem;
                 }
+            }
+        }
+        footer{
+            flex-direction: column;
+            text-align: center;
+            .footer2{
+                padding: 1rem 0;
             }
         }
     }
