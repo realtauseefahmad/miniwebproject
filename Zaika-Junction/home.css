@@ -213,6 +213,7 @@ main .section3 .review .reviewl h4 {
   font-size: 1.3rem;
   text-align: center;
   color: #171717;
+  display: inline-block;
 }
 main .section3 .review .reviewl p {
   width: 900px;
