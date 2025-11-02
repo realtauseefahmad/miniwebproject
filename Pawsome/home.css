@@ -58,7 +58,7 @@ header .header1 .headleft button:active {
 }
 header .header2 {
   width: 100%;
-  height: 25rem;
+  height: 24.4rem;
   background: linear-gradient(white, rgb(144, 220, 245));
 }
 header .header2 .head {
@@ -87,7 +87,7 @@ header .header2 .foot img {
 
 @media (max-width: 200px) {
   header .header2 {
-    height: 20.05rem;
+    height: 19.7rem;
   }
   header .header2 .foot img {
     width: 150px;
@@ -95,7 +95,7 @@ header .header2 .foot img {
 }
 @media (min-width: 500px) {
   header .header2 {
-    height: 29.87rem;
+    height: 29.1rem;
   }
   header .header2 .nav3 i {
     font-size: 5rem;
@@ -108,7 +108,7 @@ header .header2 .foot img {
   header {
     flex-direction: row;
     background: linear-gradient(to right, white, rgb(144, 220, 245));
-    height: 27.55rem;
+    height: 26.7rem;
   }
   header .header1 .nav {
     display: block;
