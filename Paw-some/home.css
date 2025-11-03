@@ -163,6 +163,17 @@ h2 {
   header .header2 .foot img {
     width: 150px;
   }
+  h2 {
+    font-size: 0.7rem;
+  }
+  .petservice .service .cardservice {
+    width: 150px;
+    height: 250px;
+  }
+  .petservice .service .cardservice .innercard img {
+    width: 150px;
+    height: 250px;
+  }
 }
 @media (min-width: 500px) {
   header .header2 {
