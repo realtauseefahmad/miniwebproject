@@ -142,7 +142,63 @@ h2{
     from {translate: 0;}
     to {translate: -100%;}
 }
-
+.veterinarians{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    .doctor{ 
+        h4{
+            font-size: 0.7rem;
+            text-align: center;
+            font-family: "service";
+            font-weight: 100;
+            color: #171717;
+            padding: 1rem 0;
+        }
+        img{
+            margin-left: 1rem;
+            width: 220px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50px;
+            
+        }
+    }
+    .line{
+        p{
+            color: #787A7C;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 0.8rem;
+            width: 270px;
+        }
+        button {
+            margin-left: 20%;
+            background-color: rgb(117, 210, 241);
+            color: #000;
+            border: none;
+            padding: 0.8rem 1.4rem;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(117, 210, 241, 0.4);
+            
+            &:hover {
+              background-color: #0ea5e9;
+              color: #fff;
+              transform: scale(1.05);
+              box-shadow: 0 6px 15px rgba(14, 165, 233, 0.5);
+            }
+            
+            &:active {
+              transform: scale(0.97);
+            }
+        }             
+    }
+}
 @media (max-width:200px) {
      header{
         .header1{
@@ -190,6 +246,28 @@ h2{
             }
         }
     }
+    .veterinarians{
+           .doctor{
+              h4{
+                font-size: 0.5rem;
+              }
+              img{
+                margin-left: 0.5rem;
+                 width: 150px;
+                 height: 250px;
+              }
+           }
+           .line{
+            P{
+                width: 250px;
+            }
+            button{
+                margin-left: 1rem;
+                 padding: 0.5rem 0.7rem;
+                    font-size: 10px;
+            }
+           }
+    }
 }
 @media (min-width:500px) {
     header{
@@ -206,6 +284,28 @@ h2{
                 }
             }
         }
+    }
+    .veterinarians{
+           .doctor{
+              h4{
+                font-size: 1.1rem;
+              }
+              img{
+                margin-left: 0.5rem;
+                 width: 400px;
+                 height: 250px;
+                 object-fit: cover;
+              }
+           }
+           .line{
+            P{
+                width: 420px;
+                font-size: 1.2rem;
+            }
+            button{
+                margin-left: 25%;
+            }
+           }
     }
 }
 @media (min-width:722px) {
@@ -255,5 +355,24 @@ h2{
                 }
             }
         }
+    }
+    .veterinarians{
+           .doctor{
+              h4{
+                font-size: 1.1rem;
+              }
+              img{
+                margin-left: 0.5rem;
+                width: 500px;
+                height: 300px;
+                
+              }
+           }
+           .line{
+            P{
+                width: 450px;
+                font-size: 1.5rem;
+            }
+           }
     }
 }
