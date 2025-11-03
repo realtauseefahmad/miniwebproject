@@ -453,6 +453,9 @@ footer .footer-bottom {
   header .header2 {
     width: 60%;
   }
+  header .header2 .head .nav2 {
+    font-size: 1rem;
+  }
   header .header2 .head .nav2A {
     display: block;
   }
