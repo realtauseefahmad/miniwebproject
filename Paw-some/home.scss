@@ -76,12 +76,16 @@ header{
             display: flex;
             justify-content: space-between;
             padding: 1rem 1rem;
+            // gap: 1rem;
             .nav1{
                 img{
                     width: 60px;
                 }
             }
             .nav2{
+                display: none;
+            }
+            .nav2A{
                 display: none;
             }
             .nav2a{
@@ -374,5 +378,48 @@ h2{
                 font-size: 1.5rem;
             }
            }
+    }
+}
+@media (min-width:900px) {
+    header{
+        .header1{
+            width: 40%;
+        }
+        .header2{
+            width: 60%;
+            .head{
+                .nav2A {
+                    display: block;
+                    a{
+                        padding: 0.5rem 1rem;
+                        text-decoration: none;
+                        color: #171717;
+                        background-color: rgb(117, 210, 241);
+                        border-radius: 50px;
+                        font-size: 0.7rem;
+                        box-shadow: 0 4px 10px rgba(117, 210, 241, 0.4);
+                        
+                        &:hover {
+                            background-color: #0ea5e9;
+                            color: #fff;
+                            transform: scale(1.05);
+                            box-shadow: 0 6px 15px rgba(14, 165, 233, 0.5);
+                        }
+            
+                        &:active {
+                          transform: scale(0.97);
+                        }
+                    }
+                }
+                .nav2a{
+                    .user{
+                        display: none;
+                    }
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

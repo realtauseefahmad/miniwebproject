@@ -81,6 +81,9 @@ header .header2 .head .nav1 img {
 header .header2 .head .nav2 {
   display: none;
 }
+header .header2 .head .nav2A {
+  display: none;
+}
 header .header2 .head .nav2a {
   display: none;
 }
@@ -324,5 +327,40 @@ h2 {
   .veterinarians .line P {
     width: 450px;
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 900px) {
+  header .header1 {
+    width: 40%;
+  }
+  header .header2 {
+    width: 60%;
+  }
+  header .header2 .head .nav2A {
+    display: block;
+  }
+  header .header2 .head .nav2A a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #171717;
+    background-color: rgb(117, 210, 241);
+    border-radius: 50px;
+    font-size: 0.7rem;
+    box-shadow: 0 4px 10px rgba(117, 210, 241, 0.4);
+  }
+  header .header2 .head .nav2A a:hover {
+    background-color: #0ea5e9;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.5);
+  }
+  header .header2 .head .nav2A a:active {
+    transform: scale(0.97);
+  }
+  header .header2 .head .nav2a .user {
+    display: none;
+  }
+  header .header2 .head .nav2a a {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=home.css.map */
