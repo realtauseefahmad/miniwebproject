@@ -2,6 +2,14 @@
   font-family: "heading";
   src: url(./Bright\ Daylight.ttf);
 }
+@font-face {
+  font-family: "service";
+  src: url(./Snowberry\ Brush\ -\ Demo.otf);
+}
+@font-face {
+  font-family: "cardservice";
+  src: url(./Elegant\ Valentine.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +68,7 @@ header .header2 {
   width: 100%;
   height: 24.4rem;
   background: linear-gradient(white, rgb(144, 220, 245));
+  overflow: hidden;
 }
 header .header2 .head {
   display: flex;
@@ -85,9 +94,71 @@ header .header2 .foot img {
   width: 200px;
 }
 
+h2 {
+  text-align: center;
+  font-family: "service";
+  padding: 1rem;
+}
+
+.petservice {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+}
+.petservice .service {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  animation: spin 6s infinite linear;
+}
+.petservice .service .cardservice {
+  width: 300px;
+  height: 350px;
+  flex-shrink: 0;
+}
+.petservice .service .cardservice .innercard img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.petservice .service .cardservice h3 {
+  text-align: center;
+  color: #171717;
+  font-family: "cardservice";
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.petservice::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
 @media (max-width: 200px) {
+  header .header1 .headleft h1 {
+    font-size: 2rem;
+  }
+  header .header1 .headleft p {
+    font-size: 0.8rem;
+  }
+  header .header1 .headleft button {
+    padding: 0.5rem 0.7rem;
+    font-size: 10px;
+  }
   header .header2 {
     height: 19.7rem;
+  }
+  header .header2 .head .nav3 i {
+    font-size: 10px;
   }
   header .header2 .foot img {
     width: 150px;
