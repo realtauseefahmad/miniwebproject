@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "service";
+  src: url(./Snowberry\ Brush\ -\ Demo.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background: linear-gradient(white, rgb(144, 220, 245));
+}
+
+.auth-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.auth-section .auth-container {
+  width: 100%;
+  max-width: 320px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(117, 210, 241, 0.4);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.auth-section .auth-container h2 {
+  font-family: "service";
+  font-size: 1.3rem;
+  color: #171717;
+  margin-bottom: 0.5rem;
+}
+.auth-section .auth-container p {
+  color: #787a7c;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.auth-section .auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.auth-section .auth-container form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.auth-section .auth-container form input:focus {
+  border-color: rgb(117, 210, 241);
+  box-shadow: 0 0 8px rgba(117, 210, 241, 0.5);
+}
+.auth-section .auth-container form button {
+  background-color: rgb(117, 210, 241);
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(117, 210, 241, 0.4);
+}
+.auth-section .auth-container form button:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(14, 165, 233, 0.5);
+}
+.auth-section .auth-container form button:active {
+  transform: scale(0.97);
+}
+.auth-section .auth-container form .switch {
+  font-size: 0.75rem;
+  color: #787a7c;
+}
+.auth-section .auth-container form .switch a {
+  color: #0ea5e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.auth-section .auth-container form .switch a:hover {
+  text-decoration: underline;
+}
+.auth-section .auth-container .hidden {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .auth-section .auth-container {
+    max-width: 380px;
+    padding: 2rem;
+  }
+  .auth-section .auth-container h2 {
+    font-size: 1.6rem;
+  }
+  .auth-section .auth-container p {
+    font-size: 0.9rem;
+  }
+  .auth-section .auth-container form input {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+  .auth-section .auth-container form button {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .auth-section .auth-container form .switch {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .auth-section {
+    padding: 2rem;
+  }
+  .auth-section .auth-container {
+    max-width: 480px;
+    padding: 2.5rem;
+    border-radius: 30px;
+  }
+  .auth-section .auth-container h2 {
+    font-size: 1.8rem;
+  }
+  .auth-section .auth-container p {
+    font-size: 1rem;
+  }
+  .auth-section .auth-container form input {
+    font-size: 1rem;
+  }
+  .auth-section .auth-container form button {
+    font-size: 1rem;
+    padding: 1rem 1.6rem;
+  }
+  .auth-section .auth-container form .switch {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .auth-section {
+    background: linear-gradient(to right, white, rgb(144, 220, 245));
+  }
+  .auth-section .auth-container {
+    max-width: 550px;
+    padding: 3rem;
+  }
+  .auth-section .auth-container h2 {
+    font-size: 2rem;
+  }
+  .auth-section .auth-container form input {
+    font-size: 1rem;
+  }
+  .auth-section .auth-container form button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=login.css.map */
