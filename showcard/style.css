@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@property --Angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes angleRotate {
+  from {
+    --Angle: 0deg;
+  }
+  to {
+    --Angle: 360deg;
+  }
+}
+.card {
+  width: 280px;
+  height: 400px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  animation: angleRotate 2s linear infinite;
+  animation-play-state: paused;
+  scale: 1;
+  transform-origin: center;
+}
+.card:hover {
+  border: 5px solid transparent !important;
+  background: linear-gradient(black) padding-box,
+    conic-gradient(from var(--Angle), black, rgb(214, 122, 237), rgb(223, 150, 241), rgb(214, 122, 237), black, black)
+      border-box;
+  box-shadow: 0 0 60px rgba(214, 122, 237, 0.817);
+  animation-play-state: running;
+  scale: 1 !important;
+  filter: blur(0) !important;
+}
+.card img {
+  height: 80%;
+  image-rendering: optimizeSpeed;
+  image-resolution: smooth;
+  transition: all 0.3s linear;
+  transform-origin: bottom;
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+.card:hover img {
+  scale: 1.2;
+  filter: blur(0) !important;
+}
+.card h1 {
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+.card p {
+  padding-top: 5px;
+  font-size: 0.6rem;
+}
+.card h1,
+.card p {
+  align-self: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transition: all 0.3s;
+}
+.ironMen:hover {
+  background: linear-gradient(black) padding-box,
+    conic-gradient(from var(--Angle), black, rgb(250, 81, 126), rgb(250, 81, 126), rgb(250, 81, 126), black, black)
+      border-box;
+  box-shadow: 0 0 60px rgba(250, 81, 126, 0.78);
+}
+.ironMen:hover h1,
+.ironMen:hover p {
+  color: rgb(250, 81, 126);
+  text-shadow: 0 0 10px rgb(250, 81, 126);
+}
+.moonKnight:hover {
+  background: linear-gradient(black) padding-box,
+    conic-gradient(from var(--Angle), black, rgb(240, 236, 237), rgb(240, 236, 237), rgb(240, 236, 237), black, black)
+      border-box;
+  box-shadow: 0 0 60px rgba(240, 236, 237, 0.755);
+}
+.moonKnight:hover h1,
+.moonKnight:hover p {
+  color: rgb(240, 236, 237);
+  text-shadow: 0 0 10px rgb(240, 236, 237);
+}
+.thor:hover {
+  background: linear-gradient(black) padding-box,
+    conic-gradient(from var(--Angle), black, rgb(105, 220, 255), rgb(105, 220, 255), rgb(105, 220, 255), black, black)
+      border-box;
+  box-shadow: 0 0 60px rgba(105, 220, 255, 0.759);
+}
+.thor:hover h1,
+.thor:hover p {
+  color: rgb(105, 220, 255);
+  text-shadow: 0 0 10px rgb(105, 220, 255);
+}
+.batman:hover {
+  background: linear-gradient(black) padding-box,
+    conic-gradient(from var(--Angle), black, rgb(255, 255, 105), rgb(255, 255, 105), rgb(255, 255, 105), black, black)
+      border-box;
+  box-shadow: 0 0 60px rgba(255, 255, 105, 0.72);
+}
+.batman:hover h1,
+.batman:hover p {
+  color: rgb(255, 255, 105);
+  text-shadow: 0 0 10px rgb(255, 255, 105);
+}
+body:has(.card:hover) .card {
+  border: 0;
+  scale: 0.8;
+  filter: blur(2px);
+}
+body:has(.card:hover) .card img {
+  filter: blur(2px);
+}
