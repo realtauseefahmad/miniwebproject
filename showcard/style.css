@@ -7,9 +7,17 @@ html,
 body {
   width: 100%;
   height: 100%;
-}
-body {
   background-color: black;
+}
+header p{
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 80px;
+  font-size: 50px;
+}
+main {
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,11 +135,11 @@ body {
   color: rgb(255, 255, 105);
   text-shadow: 0 0 10px rgb(255, 255, 105);
 }
-body:has(.card:hover) .card {
+main:has(.card:hover) .card {
   border: 0;
   scale: 0.8;
   filter: blur(2px);
 }
-body:has(.card:hover) .card img {
+main:has(.card:hover) .card img {
   filter: blur(2px);
 }
