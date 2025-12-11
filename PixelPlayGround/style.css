@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "logo";
+  src: url(./Plump\ Varsity.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: aliceblue;
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(circle at top, rgba(0, 120, 255, 0.25) 0%, rgb(0, 0, 0) 60%) fixed;
+  animation: mainFade 0.8s ease forwards;
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 150px;
+  background: rgba(0, 140, 255, 0.15);
+  filter: blur(60px);
+  z-index: 0;
+}
+main::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 140px;
+  background: rgba(0, 140, 255, 0.12);
+  filter: blur(65px);
+  z-index: 0;
+}
+@keyframes mainFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: rgba(0, 10, 60, 0.35);
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(0, 140, 255, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 140, 255, 0.15), 0 0 25px rgba(0, 140, 255, 0.1) inset;
+  animation: navFade 0.8s ease forwards;
+}
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main nav .navleft {
+  color: whitesmoke;
+}
+main nav .navleft h1 {
+  font-size: 32px;
+  font-family: "logo";
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+main nav .navleft h1:hover {
+  color: #4da6ff;
+  text-shadow: 0 0 10px rgba(77, 166, 255, 0.7), 0 0 20px rgba(77, 166, 255, 0.4);
+  transform: scale(1.05);
+}
+main nav .navleft h1 span {
+  color: #4da6ff;
+  transition: 0.3s ease;
+}
+main nav .navcenter a {
+  padding: 0 10px;
+  font-size: 20px;
+  color: #e8e8e8;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease;
+  letter-spacing: 0.5px;
+}
+main nav .navcenter a:hover {
+  color: #4da6ff;
+  text-shadow: 0 0 8px rgba(77, 166, 255, 0.8);
+}
+main nav .navcenter a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #4da6ff;
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+}
+main nav .navcenter a:hover::after {
+  width: 100%;
+}
+main nav .navright {
+  padding: 0 10px;
+}
+main nav .navright a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #005eff, #00aaff);
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  box-shadow: 0 0 8px rgba(0, 153, 255, 0.5);
+}
+main nav .navright a span i {
+  font-size: 20px;
+  color: #ffffff;
+}
+main nav .navright a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.9), 0 0 18px rgba(0, 191, 255, 0.6);
+}
+main nav .navright a:active {
+  transform: scale(0.95);
+}
+main nav .navright > i {
+  padding: 0 15px;
+  font-size: 23px;
+  color: #4da6ff;
+  transition: 0.25s ease;
+}
+main nav .navright > i:hover {
+  color: #79c2ff;
+  text-shadow: 0 0 10px rgba(77, 166, 255, 0.9);
+  transform: scale(1.15);
+}
+main header {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+main header .frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main header .frame .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+  /* Optional subtle hover for button/overlay */
+}
+main header .frame .overlay h1 {
+  font-family: "logo";
+  font-size: 60px;
+  font-weight: 300;
+  color: #00d4ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+main header .frame .overlay h1 span {
+  color: #ff4dff;
+}
+main header .frame .overlay p {
+  margin-top: 12px;
+  font-size: 20px;
+  color: blue;
+  letter-spacing: 1px;
+}
+main header .frame .overlay:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+  transition: 0.3s ease;
+}
+main header .frame .overlay .cta {
+  margin-top: 20px;
+  padding: 12px 35px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0066ff, #00d9ff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.7), 0 0 25px rgba(0, 153, 255, 0.4);
+  transition: 0.25s ease-in-out;
+  letter-spacing: 1px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+main header .frame .overlay .cta:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 191, 255, 0.85), 0 0 35px rgba(0, 191, 255, 0.6);
+  background: linear-gradient(135deg, #0084ff, #00faff);
+}
+main header .frame .overlay .cta:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.7);
+}
+main header .frame .slide {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+main header .frame .image {
+  min-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main header .arrow {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+main header .arrow.left {
+  left: 20px;
+  transform: rotate(180deg);
+}
+main header .arrow:not(.left) {
+  right: 20px;
+}/*# sourceMappingURL=style.css.map */
