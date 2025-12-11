@@ -55,17 +55,11 @@ This project recreates a modern Windows desktop with draggable windows, start me
 
 ---
 
-## 📂 Project Structure
-
-
----
-
 ## 🎯 Purpose
 A practice project to improve:
 - UI/UX design  
 - DOM manipulation  
 - Desktop OS simulation using frontend  
-- Portfolio-ready interactive project  
 
 ---
 
