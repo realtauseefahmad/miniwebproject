@@ -4,6 +4,12 @@ A modern **Weather Dashboard Mini Project** built using **HTML, SCSS (SASS), and
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Live Project URL:** [https://miniwebproject-1dnz.vercel.app/](https://miniwebproject-1dnz.vercel.app/)
+
+---
+
 ## 🚀 Live Features
 
 * 🔍 Search weather by city name
