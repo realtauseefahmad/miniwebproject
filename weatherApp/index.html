@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Weather World Builder</h2>
+        </header>
+        <nav>
+            <div class="navleft">
+                <i class="ri-windy-line"></i>
+            </div>
+            <div class="navright">
+                <a href="#"><i class="ri-cloud-windy-fill"></i><br>weather</a><br>
+                <a href="https:www.google.com/maps"><i class="ri-map-2-line"></i><br>Map</a><br>
+                <a href="#"><i class="ri-equalizer-line"></i> <br>Setting</a>
+            </div>
+        </nav>
+        <section id="mid">
+            <div class="searchtemp">
+                <input type="search" required>
+                <label>search for City</label>
+                <div class="temp">
+                    <h3>Bhopal</h3>
+                    <p>chance of Rain: 0%</p>
+                    <h2>35°c</h2>
+                </div>
+            </div>
+            <div class="todayforcase">
+                <h4>TODAYS FORECAST</h4>
+                <div class="record">
+                    <div class="time">
+                        <h5>6:00 AM</h5>
+                        <h5>25°c</h5>
+                    </div>
+                    <div class="time">
+                        <h5>9:00 AM</h5>
+                        <h5>25°c</h5>
+                    </div>
+                    <div class="time">
+                        <h5>12:00 PM</h5>
+                        <h5>25°c</h5>
+                    </div>
+                    <div class="time">
+                        <h5>3:00 PM</h5>
+                        <h5>25°c</h5>
+                    </div>
+                    <div class="time">
+                        <h5>6:00 AM</h5>
+                        <h5>32°c</h5>
+                    </div>
+                    <div class="time">
+                        <h5>9:00 PM</h5>
+                        <h5>25°c</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="aircondition">
+                <h4>AIR CONDITION</h4>
+                <button class="glass-btn">See More</button>
+            </div>
+        </section>
+        <section id="last">
+            <div class="days"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
