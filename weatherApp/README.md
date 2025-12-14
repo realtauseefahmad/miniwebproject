@@ -116,9 +116,7 @@ Frontend Developer (Learning Phase 🚀)
 
 * 📍 Auto-detect location
 * 🌈 Weather-based dynamic background
-* 🔄 Loading animation
 * 📊 Charts for forecast
-* 📱 PWA support
 
 ---
 
