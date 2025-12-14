@@ -16,13 +16,13 @@ main {
   background: conic-gradient(from 180deg at 70% 30%, #6a85ff, #b06ab3, #6a85ff), linear-gradient(135deg, #1e3c72, #2a5298);
   background-blend-mode: overlay;
   display: grid;
-  grid-template-rows: 0.4fr 1.6fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1.6fr;
   grid-template-columns: 0.5fr 2.5fr 1fr;
-  grid-template-areas: "header header header" "nav searchtemp last" "nav todayforcase last" "nav aircondition last";
-  row-gap: 3px;
+  grid-template-areas: "header header header" "nav mid last" "nav mid last" "nav mid last";
+  gap: 20px;
+  padding: 20px;
 }
 main header {
-  width: 100%;
   grid-area: header;
 }
 main header h2 {
@@ -31,48 +31,54 @@ main header h2 {
   color: #ffffff;
 }
 main nav {
+  grid-area: nav;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-  align-items: center;
-  text-align: center;
   color: #fff;
-  margin: 0px 20px;
-  grid-area: nav;
+  text-align: center;
 }
 main nav .navleft i {
   color: palevioletred;
   font-size: 30px;
 }
 main nav .navright a {
+  display: block;
   text-decoration: none;
   font-size: 25px;
   color: #fff;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 main nav .navright a i {
   color: palevioletred;
   font-size: 30px;
 }
+main #mid {
+  grid-area: mid;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 20px;
+}
 main #mid .searchtemp {
-  grid-area: searchtemp;
+  height: 140px;
+  padding: 20px;
+  position: relative;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-  align-items: center;
-  text-align: center;
   color: #fff;
-  position: relative;
+  text-align: center;
 }
 main #mid .searchtemp input {
   width: 100%;
@@ -83,91 +89,191 @@ main #mid .searchtemp input {
   outline: none;
   color: #fff;
   font-size: 18px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 main #mid .searchtemp label {
   position: absolute;
-  left: 12px;
-  top: 20%;
+  left: 32px;
+  top: 38%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
   pointer-events: none;
   transition: 0.3s ease;
-  background: transparent;
 }
 main #mid .searchtemp input:focus + label,
 main #mid .searchtemp input:hover + label,
 main #mid .searchtemp input:valid + label {
-  top: -8px;
-  font-size: 17px;
+  top: 6px;
+  font-size: 16px;
   color: #fff;
 }
 main #mid .todayforcase {
-  grid-area: todayforcase;
+  padding: 10px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-  align-items: center;
-  text-align: center;
   color: #fff;
+  text-align: center;
 }
 main #mid .todayforcase .record {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding: 10px 2px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 main #mid .todayforcase .record .time {
-  margin-top: 10px;
-  padding: 20px;
+  padding: 16px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.45);
 }
-main #mid .todayforcase .record h5 {
+main #mid .todayforcase .record .time h5 {
   font-size: 15px;
 }
 main #mid .aircondition {
-  grid-area: aircondition;
+  padding: 20px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-  text-align: center;
   color: #fff;
 }
-main #mid .aircondition h4 {
-  display: inline-block;
-  margin-right: 50%;
+main #mid .aircondition .air-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+main #mid .aircondition .air-head h4 {
+  font-size: 20px;
 }
 main #mid .aircondition .glass-btn {
-  padding: 12px 28px;
+  padding: 10px 24px;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.35);
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
+  color: #fff;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: 0.25s;
 }
 main #mid .aircondition .glass-btn:hover {
   background: rgba(255, 255, 255, 0.28);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
-main #mid .aircondition .glass-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+main #mid .aircondition .air-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+main #mid .aircondition .air-box {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+main #mid .aircondition .air-box p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+main #mid .aircondition .air-box h3 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+main #last {
+  grid-area: last;
+}
+main #last .days {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+main #last .days h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+main #last .days .day {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px 0;
+}
+main #last .days .day h5 {
+  font-size: 20px;
+}
+main #last .days .day h6 {
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  html, body {
+    height: auto;
+  }
+  main {
+    height: auto;
+    display: block;
+    padding: 14px;
+  }
+  header {
+    margin-bottom: 16px;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  nav .navright {
+    display: flex;
+    gap: 18px;
+  }
+  nav .navright a {
+    font-size: 16px;
+    padding: 0;
+  }
+  #mid {
+    display: block;
+  }
+  #mid > * {
+    margin-bottom: 16px;
+  }
+  #mid .todayforcase .record {
+    justify-content: flex-start;
+  }
+  #mid .aircondition .air-data {
+    grid-template-columns: 1fr;
+  }
+  #last {
+    margin-top: 16px;
+  }
+  #last .days .day {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 20px;
+  }
+  nav .navright a {
+    font-size: 14px;
+  }
+  nav .navright a i {
+    font-size: 20px;
+  }
+  #mid .searchtemp input {
+    padding: 12px;
+    font-size: 15px;
+  }
+  #mid .aircondition {
+    padding: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
